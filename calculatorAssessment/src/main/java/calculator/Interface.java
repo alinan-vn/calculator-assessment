@@ -31,24 +31,29 @@ public class Interface {
 			add.setA(numA);
 			add.setB(numB);
 			result = add.getResult();
+			System.out.println("The result is!");
 		} else if(operation.equals("subtract")) {
 			Subtraction subtract = new Subtraction();
 			subtract.setA(numA);
 			subtract.setB(numB);
 			result = subtract.getResult();
+			System.out.println("The result is!");
 		} else if(operation.equals("multiply")) {
 			Multiplication multiply = new Multiplication();
 			multiply.setA(numA);
 			multiply.setB(numB);
 			result = multiply.getResult();
+			System.out.println("The result is!");
 		} else if(operation.equals("divide")) {
 			Division divide = new Division();
 			divide.setA(numA);
 			divide.setB(numB);
 			result = divide.getResult();
+			System.out.println("The result is!");
+		} else {
+			System.out.println("Incorrect operation inputted. Check to see it is written exactly as stated and run again.");
 		}
 		
-		System.out.println("The result is!");
 		System.out.println(result);
 	}
 }
